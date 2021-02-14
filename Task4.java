@@ -61,9 +61,7 @@ public class Task4 {
 			}
 			
 			ContinueShopping.click();
-
 		}
-		
 	
 		WebElement productNum =driver.findElement(By.id("summary_products_quantity"));
 		String numProducsInCart = productNum.getText();
