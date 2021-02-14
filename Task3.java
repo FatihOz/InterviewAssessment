@@ -84,7 +84,7 @@ public class Task3 {
         ;
 
     }
-
+    
     //Create new user 3rd Option
     @DisplayName("Add 1 Data with External json file POST /api/spartans")
     @Test
@@ -148,8 +148,6 @@ public class Task3 {
                 .statusCode(is(200))
                 .contentType(ContentType.JSON)
         ;
-
-
     }
 
 }
