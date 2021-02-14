@@ -25,7 +25,7 @@ public class Task3 {
 		
 		reset();
 	}
-	//Create new user 2nd Option
+	//Create new user 1st Option
 	@DisplayName("Add 1 New User with Raw Json String POST /user")
     @Test
     public void testAddNewUserWithString() {
