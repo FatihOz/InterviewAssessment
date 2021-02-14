@@ -52,17 +52,19 @@ public class Task4 {
 		int count = 0;
 		for (int i = 0; i <= products.size(); i++) {
 			count++;
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			addCart.get(i).click();
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			
 			if (count == products.size()) {
 				proceedToCheckout.click();
 				break;
 			}
+			
 			ContinueShopping.click();
 
 		}
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-
+		
+	
 		WebElement productNum =driver.findElement(By.id("summary_products_quantity"));
 		String numProducsInCart = productNum.getText();
 		String expectedResult = "4 Products";
